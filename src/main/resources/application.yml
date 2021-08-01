@@ -1,0 +1,18 @@
+server:
+  port: 9009
+
+app:
+  currency: RUB
+
+# Open Exchange Rates
+openexchangerates:
+  name: oxr
+  url: https://openexchangerates.org/api
+  appId: 48378099331d431eaab9d7437c5277b6
+
+
+# Giphy
+giphy:
+  name: giphy
+  url: https://api.giphy.com/v1/gifs
+  apiKey: fxYSLOQLu2Y5YY51Hmrvyo8n4nWeOL0q
