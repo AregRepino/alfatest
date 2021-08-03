@@ -1,6 +1,5 @@
 package com.alfabank.exchange.clients.dto.giphy;
 
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

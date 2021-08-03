@@ -25,7 +25,7 @@ public class ExchangeService {
         double todayValue = latestExchange.getRates().getOrDefault(currency, 0.0);
         double yesterdayValue = yesterdayExchange.getRates().getOrDefault(currency, 0.0);
 
-        String query = buildQueryKeyword(todayValue, yesterdayValue);
+        String query = ExchangeUtils.buildQueryKeyword(todayValue, yesterdayValue);
 
         GiphySearchResponseDto giphySearchResponseDto = giphyClient.search(query);
 
@@ -37,12 +37,4 @@ public class ExchangeService {
         return giphyData;
     }
 
-    private String buildQueryKeyword(double todayValue, double yesterdayValue) {
-        if (todayValue > yesterdayValue) {
-            return "rich";
-        } else {
-            return "broke";
-        }
-
-    }
 }

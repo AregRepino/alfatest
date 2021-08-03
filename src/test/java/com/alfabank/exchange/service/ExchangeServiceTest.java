@@ -24,8 +24,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
 
-import static com.github.tomakehurst.wiremock.client.WireMock.*;
-
 
 @RunWith(SpringRunner.class)
 public class ExchangeServiceTest {

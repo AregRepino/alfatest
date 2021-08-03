@@ -1,5 +1,4 @@
-package com.alfabank.exchange.service;
-
+package com.alfabank.exchange.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

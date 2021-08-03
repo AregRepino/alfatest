@@ -12,5 +12,5 @@ public interface GiphyClient {
 
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json", value = "/search?api_key=${giphy.apiKey}")
-    public GiphySearchResponseDto search(@RequestParam("q") String query);
+    GiphySearchResponseDto search(@RequestParam("q") String query);
 }

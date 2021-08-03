@@ -1,7 +1,7 @@
 package com.alfabank.exchange.controller;
 
 import com.alfabank.exchange.clients.dto.giphy.GiphyData;
-import com.alfabank.exchange.service.AppConfig;
+import com.alfabank.exchange.config.AppConfig;
 import com.alfabank.exchange.service.ExchangeService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -65,7 +65,6 @@ public class ExchangeControllerTest {
         assertNotNull(result);
         assertEquals(giphyData, result);
     }
-
 
 
 }
